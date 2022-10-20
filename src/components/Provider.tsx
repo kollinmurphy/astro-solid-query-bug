@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/solid-query";
-import QueryConsumer from "./QueryConsumer";
+import Consumer from "./Consumer";
 
 const client = new QueryClient()
 
@@ -7,7 +7,7 @@ export default function SolidQuery() {
   return (
     <QueryClientProvider client={client}>
       query provider
-      <QueryConsumer /> 
+      <Consumer /> 
     </QueryClientProvider>
   )
 }
